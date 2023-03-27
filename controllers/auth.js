@@ -82,17 +82,17 @@ exports.postSignUp = (req,res,next) => {
 
 }
 exports.getLogin = (req,res,next)=> {
-    let message = req.flash('error');
-    if(message.length > 0){
-        message = message[0];
-    }
-    else{
-        message = null;
-    }
+    // let message = req.flash('error');
+    // if(message.length > 0){
+    //     message = message[0];
+    // }
+    // else{
+    //     message = null;
+    // }
 
     res.render('login', {
         title: 'Tourev - Login',
-        errorMessage: message,
+        // errorMessage: message,
         oldInput: {
             email: '',
             password: ''
